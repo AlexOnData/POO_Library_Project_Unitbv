@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.StatusBook">
+    <children>
+        <Button fx:id="takeBookButton" layoutX="181.0" layoutY="239.0" mnemonicParsing="false" onAction="#takeBookOnAction" text="Take Book" />
+        <Button layoutX="337.0" layoutY="239.0" mnemonicParsing="false" onAction="#returnBook" text="Return Book" />
+      <Label layoutX="181.0" layoutY="117.0" text="Your book taken from the library:" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLeftField" alignment="CENTER" contentDisplay="CENTER" layoutX="181.0" layoutY="156.0" prefHeight="19.0" prefWidth="238.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="settings" layoutX="527.0" layoutY="14.0" mnemonicParsing="false" onAction="#openAdminPage" text="Settings" />
+    </children>
+</AnchorPane>
